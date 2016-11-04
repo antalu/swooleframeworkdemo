@@ -1,0 +1,27 @@
+<?php
+namespace App\Model;
+use Swoole;
+
+class User extends Swoole\Model
+{
+    /**
+     * 表名
+     * @var string
+     */
+    public $table = 'users';
+
+    function test()
+    {
+        $a = model('Test');
+        var_dump($a);
+        $key = '1234';
+        $this->swoole->cache->delete($key);
+        $this->db->getAffectedRows();
+    }
+    
+    public function getone(){
+    	$result = $this->get(1);
+    	$user = $result->get();
+    	return $user;
+    }
+}
