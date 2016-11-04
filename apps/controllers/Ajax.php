@@ -88,4 +88,19 @@ class Ajax extends Swoole\Controller
     		echo "cache set failed.";
     	}
     }
+    
+    public function t4(){
+    	$arr_get = Swoole\Filter::filterArray($_GET);
+    	$id = intval($arr_get['id']);
+    	$model = Model('User');
+    	$user = $model->getone($id);
+    	print_r($user);
+    	$data = array(
+    		'name'=> md5(uniqid()),
+    		'level' => 5,
+    		'mobile' => 15787878787
+    	);
+    	$uid = $model->insert($data);
+    	print_r($uid);
+    }
 }
