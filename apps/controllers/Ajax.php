@@ -49,6 +49,8 @@ class Ajax extends Swoole\Controller
 		$pre = $this->rsa_encode($arr_get);
 		echo Swoole\Tool::dump($pre);
 		echo "<br />";
+		echo "<br />";
+		echo "<br />";
 		//公钥解密
 		$arr_ret = $this->rsa_decode($pre);
 		echo Swoole\Tool::dump($arr_ret);

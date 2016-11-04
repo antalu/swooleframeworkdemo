@@ -78,7 +78,7 @@ class Controller extends Object
     	if(empty($arr)){
     		return $arr;
     	}
-    	$rsa = new \Swoole\Rsa();
+    	$rsa = new \App\Rsa();
     	$str_get = json_encode($arr);
     	//私钥加密，
     	$encode = $rsa->privEncrypt($str_get);
@@ -90,7 +90,7 @@ class Controller extends Object
     	if(empty($str_encode)){
     		return $str_encode;
     	}
-    	$rsa = new \Swoole\Rsa();
+    	$rsa = new \App\Rsa();
     	//公钥加密，
     	$json_decode = $rsa->pubDecrypt($str_encode);
     	$arr = json_decode($json_decode,TRUE);
