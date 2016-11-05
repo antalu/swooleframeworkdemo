@@ -6,7 +6,15 @@
 压测方法：
  * 安装ab工具：yum install httpd-tools
  * 压力测试：ab -c 1000 -n 10000 http://127.0.0.1:9501/ajax/t3?username=我我我
- 
+
+安装热更新扩展：
+ * git clone https://github.com/zenovich/runkit.git
+ * cd runkit
+ * phpize
+ * ./configure --with-php-config=/usr/local/php/bin/php-config
+ * make
+ * make install
+ * vim /usr/local/php/etc/php.ini 加上 extension="runkit.so"
 
 
  
