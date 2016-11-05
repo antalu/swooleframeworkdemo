@@ -26,7 +26,7 @@ class Rsa
          * the construtor,the param $path is the keys saving path
          */
         public function __construct(){
-        	//公钥
+        	//私钥
         	$this->_privKey = '-----BEGIN PRIVATE KEY-----
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCdX+pi0BV0XMGn
 kUFG4mPwJcUF+POlhDwpwMEVb8277euvXBPysL27Mo+/UhNKihfnnY1n6M8IXbDQ
@@ -55,7 +55,7 @@ YBavE5f2gxa3I1y6t1P/N5VFvvk+Ebx2fq/8G6egXCjs6fbnDkM2yS39gxvy+62Y
 kO/v7KkF6O938j6P59ba2xJIt3BgopFWSmPJJJOrQCBwmVabDOsmfdrccW2+cbXk
 fVx87HZyT/CBhjbjLiijpg==
 -----END PRIVATE KEY-----';
-        	//私钥
+        	//公钥
         	$this->_pubKey = '-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnV/qYtAVdFzBp5FBRuJj
 8CXFBfjzpYQ8KcDBFW/Nu+3rr1wT8rC9uzKPv1ITSooX552NZ+jPCF2w0IYFGryJ
