@@ -15,6 +15,7 @@
  * make
  * make install
  * vim /usr/local/php/etc/php.ini 加上 extension="runkit.so"
-##php7版本安装热更新扩展：
+ 
+ ##php7版本安装热更新扩展：
  * 参照：https://github.com/TysonAndre/runkit7
  
